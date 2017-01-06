@@ -114,8 +114,10 @@ def center_in_field(c, s, w):
     '++lol++'
     >>> center_in_field(' ', 'lol', 8)
     '  lol   '
+    >>> center_in_field(' ', 'what', 8)
+    '  what  '
     '''
-    
+
 
 
 
