@@ -181,7 +181,7 @@ def is_valid_dna_sequence(s):
 def get_complement(c):
     ''' (str) -> str
 
-    Return the complement of nucleotide nuc.
+    Return the complement of nucleotide c.
 
     >>> get_complement('A')
     'T'
