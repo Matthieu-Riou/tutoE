@@ -19,7 +19,7 @@ def add_ints(a, b):
 def f1(n):
     ''' (int) -> int
 
-    Returns 4 times x square plus x plus 9.
+    Returns 4 times n square plus n plus 9.
 
     >>> f1(1)
     14
@@ -119,7 +119,7 @@ def center_in_field(c, s, w):
     >>> center_in_field(' ', 'what', 9)
     '  what   '
     '''
-
+    
 
 
 
@@ -132,6 +132,10 @@ def comment_block(c, s, w):
     ##########
     #  test  #
     ##########
+    >>> check_usage(comment_block, "surround")
+    True
+    >>> check_usage(comment_block, "center_in_field")
+    True
     '''
     
 
@@ -173,8 +177,11 @@ def is_valid_dna_sequence(s):
     True
     >>> is_valid_dna_sequence('TT1TCCCG')
     False
+    >>> check_usage(is_valid_dna_sequence, "is_nucleotide")
+    True
     '''
     
+
 
 
 
@@ -193,7 +200,6 @@ def get_complement(c):
     'C'
     '''
     
-
 
 
 
@@ -276,6 +282,12 @@ def encrypt_char(c, shift):
     'C'
     >>> encrypt_char('Z', 2)
     'B'
+    >>> check_usage(encrypt_char, "get_number_from_letter")
+    True
+    >>> check_usage(encrypt_char, "get_letter_from_number")
+    True
+    >>> check_usage(encrypt_char, "shift_mod26")
+    True
     '''
     
 
